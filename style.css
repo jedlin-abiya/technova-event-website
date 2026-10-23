@@ -1,0 +1,309 @@
+/* Remove default spacing */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* General Website Style */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #020817;
+    color: white;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 7%;
+
+    background-color: #030b19;
+    border-bottom: 1px solid #12365a;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.logo h2 {
+    color: #16c7ff;
+    font-size: 24px;
+}
+
+
+/* Navigation Links */
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar ul a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar ul a:hover {
+    color: #16c7ff;
+}
+
+
+/* Navigation Button */
+
+.nav-button {
+    color: #16c7ff;
+    border: 1px solid #16c7ff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    background-color: #16c7ff;
+    color: #020817;
+}
+
+
+/* Hero Section */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px 7%;
+
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(2, 8, 23, 0.55),
+            rgba(2, 8, 23, 0.1)
+        ),
+        url("background-front.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Hero Content */
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tagline {
+    color: #16c7ff;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #16c7ff;
+}
+
+.description {
+    color: #c5d4e8;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+
+/* Event Details */
+
+.event-details {
+    margin-bottom: 30px;
+}
+
+.event-details p {
+    margin-bottom: 12px;
+    color: #dce8f8;
+}
+
+
+/* Main Button */
+
+.main-button {
+    display: inline-block;
+
+    background: linear-gradient(
+        90deg,
+        #16c7ff,
+        #176bff
+    );
+
+    color: white;
+    padding: 14px 28px;
+
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: transform 0.3s;
+}
+
+.main-button:hover {
+    transform: translateY(-3px);
+}
+
+
+/* Highlights Section */
+
+.highlights {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+.highlights h2,
+.register h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    color: #aabbd1;
+    margin-bottom: 35px;
+}
+
+
+/* Cards */
+
+.cards {
+    display: flex;
+    gap: 25px;
+}
+
+.card {
+    flex: 1;
+
+    background-color: #061326;
+    border: 1px solid #12365a;
+
+    padding: 30px 22px;
+    border-radius: 15px;
+
+    text-align: left;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #16c7ff;
+}
+
+.card h3 {
+    color: #16c7ff;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #c5d4e8;
+    line-height: 1.7;
+}
+
+
+/* Registration Section */
+
+.register {
+    text-align: center;
+    padding: 55px 20px;
+    background-color: #061326;
+}
+
+.register p {
+    color: #c5d4e8;
+    margin-bottom: 25px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+
+    background-color: #020817;
+    border-top: 1px solid #12365a;
+
+    color: #8fa5c0;
+}
+
+
+/* Mobile Responsive Design */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        gap: 15px;
+    }
+
+    .navbar ul a {
+        font-size: 14px;
+    }
+
+    .nav-button {
+        padding: 8px 14px;
+    }
+
+    .hero {
+        padding: 60px 7%;
+        min-height: 550px;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .highlights h2,
+    .register h2 {
+        font-size: 26px;
+    }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechNova | Registration</title>
+    <link rel="icon" href="logotitle.jpeg">
+
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                <span>TechNova</span>
+            </a>
+
+            <a href="web.html" class="back-button">
+                ← Back to Home
+            </a>
+
+        </nav>
+    </header>
+
+
+    <!-- Registration Section -->
+    <main class="registration-section">
+
+        <div class="registration-card">
+
+            <p class="tagline">JOIN THE FUTURE</p>
+
+            <h1>Register for <span>TechNova</span></h1>
+
+            <p class="description">
+                Be part of an exciting technology experience.
+                Fill in your details to register for the event.
+            </p>
+
+
+            <!-- Registration Form -->
+            <form action="#" method="get">
+
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="college">College Name</label>
+
+                    <input
+                        type="text"
+                        id="college"
+                        name="college"
+                        placeholder="Enter your college name"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="year">Year of Study</label>
+
+                    <select id="year" name="year" required>
+
+                        <option value="">Select your year</option>
+                        <option value="1st Year">1st Year</option>
+                        <option value="2nd Year">2nd Year</option>
+                        <option value="3rd Year">3rd Year</option>
+                        <option value="4th Year">4th Year</option>
+
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="interest">Area of Interest</label>
+
+                    <select id="interest" name="interest" required>
+
+                        <option value="">Choose your interest</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Artificial Intelligence">Artificial Intelligence</option>
+                        <option value="Cybersecurity">Cybersecurity</option>
+                        <option value="Robotics">Robotics</option>
+                        <option value="Cloud Computing">Cloud Computing</option>
+
+                    </select>
+                </div>
+
+
+                <div class="checkbox-group">
+
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        name="terms"
+                        required
+                    >
+
+                    <label for="terms">
+                        I confirm that the information provided is correct.
+                    </label>
+
+                </div>
+
+
+                <button type="submit" class="register-button">
+                    Complete Registration →
+                </button>
+
+            </form>
+
+            <div id="successMessage" class="success-message" style="display: none;"></div>
+
+
+            <p class="footer-text">
+                © 2026 TechNova | Explore. Innovate. Build.
+            </p>
+
+        </div>
+
+    </main>
+
+
+</body>
+</html>
